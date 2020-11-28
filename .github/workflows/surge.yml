@@ -31,12 +31,7 @@ jobs:
       - uses: borales/actions-yarn@v2.0.0
         with:
           cmd: install # will run `yarn install` command
-      - name: upgrade yarn
-        run: yarn upgrade
-        
-      - name: build React app
-        
-        run: yarn build
+     
         
       - name: install surge
         run: npx install --global surge
